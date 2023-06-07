@@ -1,0 +1,32 @@
+/* .example-card {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 5%;
+  }
+  
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  .mat-card-actions{
+    align-items: center;
+  }
+
+
+ */
+ .login-form-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .button-flex-container {
+    display: flex;
+    width: 100%;
+    justify-content:center;
+  }
+  .imgs {
+    background-image: url('../../assets/car-key.svg');
+    background-size: cover;
+  }

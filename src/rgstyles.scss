@@ -1,0 +1,28 @@
+
+@use '@angular/material' as mat;
+
+@include mat.core();
+$rg-primary: mat.define-palette(mat.$light-green-palette, 500);
+$rg-accent: mat.define-palette(mat.$orange-palette, A200, A100, A400);
+
+// The "warn" palette is optional and defaults to red if not specified.
+$rg-warn: mat.define-palette(mat.$deep-orange-palette);
+
+$rg-theme: mat.define-light-theme((
+ color: (
+   primary: $rg-primary,
+   accent: $rg-accent,
+   warn: $rg-warn,
+ ),
+ typography: mat.define-typography-config(),
+ density: 0,
+));
+
+@include mat.all-component-themes($rg-theme);
+// Emit theme-dependent styles for common features used across multiple components.
+//@include mat.core-theme($rg-theme);
+// Emit styles for MatButton based on `$my-theme`. Because the configuration
+// passed to `define-light-theme` omits typography, `button-theme` will not
+// emit any typography styles.
+//@include mat.button-theme($rg-theme);
+// Include the theme mixins for other components you use here.
